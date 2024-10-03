@@ -5,10 +5,11 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "\"echo \\\"Error: no test specified\\\" && exit 1\"",
+    "test": "node --test",
     "build:ui": "rm -rf dist && cd ../repaso_part0 && npm run build && cp -r dist cd ../part3-notes-backend",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push",
     "lint": "eslint ."
+    
   },
   "author": "Samantha",
   "license": "MIT",
